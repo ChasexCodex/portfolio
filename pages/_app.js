@@ -8,14 +8,13 @@ export default function MyApp({Component, pageProps}) {
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <main className="flex-1">
+      <main className="flex-1 container mx-auto flex flex-col justify-center mt-4">
         <Component {...pageProps} />
       </main>
-      <hr/>
-      <footer className="w-max mx-auto my-6 flex space-x-8">
-        <p>Made by Elyas A. Al-Amri</p>
-        <p>|</p>
-        <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+      <hr className="mt-4"/>
+      <footer className="w-max mx-auto my-6 flex space-x-4">
+        <p className="font-semibold">Made by Elyas A. Al-Amri</p>
+        <a className="italic" href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
            target="_blank"
            rel="noopener noreferrer">
           Powered by{' '}
