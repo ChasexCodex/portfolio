@@ -4,7 +4,7 @@ import '../styles/globals.css'
 
 export default function MyApp({Component, pageProps}) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>

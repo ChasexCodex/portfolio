@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Circle pathfinding",
+    "from": "01/09/2021",
+    "to": "08/10/2022",
+    "image": "/images/projects/tiptoepic3.png",
+    "url": "https://github.com/elyasamri/pathfinder-cpp"
+  },
+  {
+    "name": "Portfolio",
+    "from": "11/01/2022",
+    "to": "Now",
+    "image": "/images/no-image.png",
+    "url": "https://github.com/chasexcodex/portfolio"
+  },
+  {
+    "name": "uni-attend",
+    "from": "05/11/2021",
+    "to": "Now",
+    "image": "/images/no-image.png",
+    "url": "https://github.com/elyasamri/uni-attend"
+  }
+]
