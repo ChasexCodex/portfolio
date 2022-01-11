@@ -41,7 +41,7 @@ export default function Home() {
       <div className="mx-4 space-y-2 bg-white">
         {contributions.map((c, i) => {
           return (
-            <a target="_blank" className="block rounded shadow-md p-2" key={i}>
+            <a target="_blank" rel="noreferrer" className="block rounded shadow-md p-2" key={i}>
               <p>{c.name}: <span className="font-bold text-blue-400 underline">{c.href}</span></p>
               {/*<Image src={c.image} width={100} height={100}/>*/}
             </a>
@@ -53,7 +53,7 @@ export default function Home() {
       <div className="mx-4 space-y-2 bg-white">
         {links.map((l, i) => {
           return (
-            <a href={l.url} target="_blank" className="flex space-x-2 items-center rounded shadow-md p-2" key={i}>
+            <a href={l.url} target="_blank" rel="noreferrer" className="flex space-x-2 items-center rounded shadow-md p-2" key={i}>
               <span className="w-10 h-10">
                 <FontAwesomeIcon icon={faIcons[l.icon]}/>
               </span>
