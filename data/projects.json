@@ -4,20 +4,23 @@
     "from": "01/09/2021",
     "to": "08/10/2022",
     "image": "/images/projects/tiptoepic3.png",
-    "url": "https://github.com/elyasamri/pathfinder-cpp"
+    "url": "https://github.com/elyasamri/pathfinder-cpp",
+    "description": "Two months of designing and implementing a realtime pathfinder algorithm."
   },
   {
     "name": "Portfolio",
     "from": "11/01/2022",
     "to": "Now",
     "image": "/images/no-image.png",
-    "url": "https://github.com/chasexcodex/portfolio"
+    "url": "https://github.com/chasexcodex/portfolio",
+    "description": "My very own website that you are seeing right now."
   },
   {
     "name": "uni-attend",
     "from": "05/11/2021",
     "to": "Now",
     "image": "/images/no-image.png",
-    "url": "https://github.com/elyasamri/uni-attend"
+    "url": "https://github.com/elyasamri/uni-attend",
+    "description": "Attendance recorder service designed for universities."
   }
 ]
