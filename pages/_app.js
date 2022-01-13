@@ -8,7 +8,7 @@ export default function MyApp({Component, pageProps}) {
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <main className="flex-1 container mx-auto flex flex-col justify-center mt-4">
+      <main className="flex-1 container mx-auto flex flex-col justify-center mt-4 py-2 lg:py-4">
         <Component {...pageProps} />
       </main>
       <hr className="mt-4"/>
