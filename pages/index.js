@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <p className="font-bold px-4 text-4xl md:text-5xl lg:text-6xl">Elyas A. Al-Amri</p>
       <div className="space-y-2 mx-4 mt-4">
-        {new Array(4).fill().map((_, i) => <hr key={i}/>)}
+        <hr className="border-t-4 my-2"/>
       </div>
       <div className="flex flex-col justify-center items-center mx-4 mt-4 space-y-4 md:hidden">
         <div className="bg-gradient-from-tl from-blue-600 to-purple-700 bg-gradient-to-br bg-opacity-90 text-lg px-2 py-4 w-full md:text-xl rounded">
@@ -38,7 +38,7 @@ export default function Home() {
       <div className="mx-4 space-y-2 lg:grid grid-cols-2 lg:space-y-0 gap-2">
         {projects.map((p, i) => {
           return (
-            <Link href={p.link ?? ""} key={i}>
+            <Link href={p.link ?? "/"} key={i}>
               <a className="block rounded bg-white h-40 shadow-md p-4 flex">
                 <div className="flex-1">
                   <p className="text-xl lg:text-2xl font-bold from-[#7C7A7AFF] to-[#7C7A7AFF] via-[#adadad] bg-gradient-from-t bg-gradient-to-b  w-max rounded-xl px-2">{p.name}</p>
