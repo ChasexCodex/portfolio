@@ -1,20 +1,26 @@
 [
   {
+    "name": "GitHub",
+    "icon": "faGithub",
+    "url": "https://github.com/elyasamri",
+    "href": "@elyasamri"
+  },
+  {
     "name": "Twitter",
     "icon": "faTwitter",
     "url": "https://twitter.com/elyas_a_alamri",
     "href": "@elyas_a_alamri"
   },
   {
+    "name": "LinkedIn",
+    "icon": "faLinkedIn",
+    "url": "https://linkedin.com/in/elyas_al_amri",
+    "href": "@elyas_al_amri"
+  },
+  {
     "name": "Facebook",
     "icon": "faFacebook",
     "url": "https://facebook.com/elyas.amri",
     "href": "@elyas.amri"
-  },
-  {
-    "name": "GitHub",
-    "icon": "faGithub",
-    "url": "https://github.com/elyasamri",
-    "href": "@elyasamri"
   }
 ]
