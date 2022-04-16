@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import '../styles/globals.css'
 
 export default function MyApp({Component, pageProps}) {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-black">
+    <div className="relative min-h-screen flex flex-col bg-gray-50 dark:bg-black">
+      {/*<InteractiveBackground/>*/}
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <main className="flex-1 container mx-auto flex flex-col justify-center mt-4 py-2 lg:py-4">
+      <main className="z-10 flex-1 container mx-auto flex flex-col justify-center mt-4 py-2 lg:py-4">
         <Component {...pageProps} />
       </main>
       <hr className="mt-4 mx-4 border-t-2"/>
