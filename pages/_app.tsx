@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import type {AppProps} from 'next/app'
 import '../styles/globals.css'
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({Component, pageProps}: AppProps) {
   return (
     <div className="relative min-h-screen flex flex-col bg-gray-50 dark:bg-black">
       {/*<InteractiveBackground/>*/}
