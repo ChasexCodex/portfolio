@@ -21,7 +21,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
            target="_blank"
            rel="noopener noreferrer">
           Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
+          <Image src="/vercel.svg" alt="Vercel Logo" className="transform translate-y-0.5" width={72} height={16}/>
         </a>
       </footer>
     </div>

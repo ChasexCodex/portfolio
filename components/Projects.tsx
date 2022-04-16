@@ -14,7 +14,7 @@ export default function Projects() {
                     <p className="pl-1 leading-5 mt-0.5 dark:text-white">{p.description}</p>
                     <p className="px-1 -mb-1 mt-auto text-xs lg:text-sm lg:mb-0 dark:text-white">{p.from} - {p.to}</p>
                   </div>
-                  <Image src={p.image} className="rounded object-cover self-center" width={150} height={150}/>
+                  <Image src={p.image} className="rounded object-cover self-center" width={150} height={150} alt="Project Image"/>
                 </a>
               </Link>
           )

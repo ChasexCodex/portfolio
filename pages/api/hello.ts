@@ -1,5 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type {NextApiRequest, NextApiResponse} from 'next'
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ name: 'Elyas Al-AMri (aka EAAA)' })
+const hello = (req: NextApiRequest, res: NextApiResponse) => {
+  res.status(200).json({name: 'Elyas Al-AMri (aka EAAA)'})
 }
+
+export default hello

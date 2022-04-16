@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ShadyImage from './ShadyImage'
 
 export default function Banner() {
   return (
@@ -9,7 +10,7 @@ export default function Banner() {
             <p className="font-semibold">Technology-driven computer enthusiast with passion for music and coding</p>
           </div>
           <div className="flex w-max justify-center items-center border-2 rounded shadow">
-            <Image className="rounded aspect-ratio object-cover" src="/images/profile.jpg" alt="Profile Photo"
+            <Image className="rounded aspect-ratio object-cover" src="/images/profile/normal.jpg" alt="Profile Photo"
                    width="360" height="450"/>
           </div>
         </div>
@@ -20,8 +21,10 @@ export default function Banner() {
               Technology-driven computer enthusiast with passion for music and coding
             </p>
             <div className="flex justify-center items-center rounded shadow">
-              <Image src="/images/profile.jpg" width="360" height="450"
-                     className="rounded aspect-ratio object-cover"/>
+              <ShadyImage image1="/images/profile/normal.jpg"
+                          image2="/images/profile/ciphered.jpg"
+                          size={{width: 763, height: 900}}
+              />
             </div>
           </div>
         </div>
