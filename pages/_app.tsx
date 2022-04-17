@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import type {AppProps} from 'next/app'
 import '../styles/globals.css'
+import ScreenSize from '../components/ScreenSize'
 
 export default function MyApp({Component, pageProps}: AppProps) {
   return (
@@ -24,6 +25,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
           <Image src="/vercel.svg" alt="Vercel Logo" className="transform translate-y-0.5" width={72} height={16}/>
         </a>
       </footer>
+      {process.env.useScreenSize === 'true' && <ScreenSize/>}
     </div>
   )
 }
