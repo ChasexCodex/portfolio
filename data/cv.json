@@ -1,0 +1,59 @@
+{
+  "name": "Elyas A. Al-Amri",
+  "aliases": [
+    "Chase X. Codex",
+    "MVP EAAA"
+  ],
+  "professions": [
+    "Computer Programmer",
+    "Fullstack Web Developer",
+    "Game Developer",
+    "Mobile Apps Developer",
+    "Cloud Architect",
+    "DevOps Engineer"
+  ],
+  "programming languages": [
+    "C",
+    "C++",
+    "C#",
+    "Java",
+    "PHP",
+    "Javascript",
+    "Typescript",
+    "Python"
+  ],
+  "frameworks": {
+    "game development": [
+      "Unity"
+    ],
+    "web development": {
+      "frontend": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Vue",
+        "Bootstrap",
+        "Tailwindcss",
+        "three.js"
+      ],
+      "backend": [
+        "Node",
+        "Express",
+        "Laravel",
+        "Django",
+        "Next.js"
+      ]
+    },
+    "mobile development": [
+      "Expo",
+      "React Native",
+      "Flutter"
+    ],
+    "desktop development": [
+      "WPF",
+      "Qt",
+      "Tkinter"
+    ]
+  }
+}
