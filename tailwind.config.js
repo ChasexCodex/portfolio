@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+const additional = require('./styles/tailwind')
+
 module.exports = {
   content: [
     './pages/**/*',
@@ -5,7 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'sans': ['Consolas']
+      fontFamily: {
+        'consolas': ['Consolas', ...defaultTheme.fontFamily.sans],
+      },
+      keyframes: additional.keyframes,
+      animation: additional.animations
     },
   },
   plugins: [],

@@ -12,15 +12,12 @@ const ShadyImage = ({image1, image2}: Props) => {
       lg:min-w-[500px] lg:max-w-[500px] lg:h-[600px]
       ml-auto">
         <div className="absolute inset-0">
-          <Image src={image1} alt="Image 1" layout="fill"
-                 className="object-cover transition hover:opacity-0 duration-500 rounded-md"/>
+          <Image src={image2} alt="Image2" layout="fill"
+                 className="object-cover rounded-md"/>
         </div>
         <div className="absolute inset-0">
-          <Image src={image2} alt="Image2" layout="fill"
-                 className="object-cover transition hover:opacity-100 duration-500 opacity-0 rounded-md"/>
-        </div>
-        <div className="absolute animate-pulse text-sm top-2 right-2 bg-orange-400 rounded-xl px-1">
-          Click it to switch
+          <Image src={image1} alt="Image 1" layout="fill"
+                 className="object-cover rounded-md animate-fading"/>
         </div>
       </div>
   )
