@@ -17,7 +17,7 @@ const ShadyImage = ({image1, image2}: Props) => {
         </div>
         <div className="absolute inset-0">
           <Image src={image1} alt="Image 1" layout="fill"
-                 className="object-cover rounded-md animate-fading"/>
+                 className="object-cover rounded-md animate-fading hover:animate-flashing"/>
         </div>
       </div>
   )

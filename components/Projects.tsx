@@ -4,8 +4,7 @@ import Image from 'next/image'
 
 export default function Projects() {
   return (
-      <div>
-        <hr className="mx-4 mt-4 mb-1"/>
+      <>
         <p className="text-center text-3xl lg:text-5xl font-bold mb-2 lg:mb-4 dark:text-white">
           Projects
         </p>
@@ -25,6 +24,6 @@ export default function Projects() {
             )
           })}
         </div>
-      </div>
+      </>
   )
 }

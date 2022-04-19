@@ -3,8 +3,7 @@ import Image from 'next/image'
 
 export default function Contributions() {
   return (
-      <div>
-        <hr className="mx-4 mt-4 mb-1"/>
+      <>
         <p className="text-center text-3xl lg:text-5xl font-bold mb-2 lg:mb-4 dark:text-white">
           Contributions
         </p>
@@ -21,6 +20,6 @@ export default function Contributions() {
             )
           })}
         </div>
-      </div>
+      </>
   )
 }
