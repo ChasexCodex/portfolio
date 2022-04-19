@@ -83,8 +83,8 @@ const Sphere = ({radius = 20, texts = [], countX, countY}: CloudProps) => {
 const SkillSphere = () => {
   return (
       <Suspense fallback={null}>
-        <Canvas style={{backgroundColor: 'transparent', height: '100vh', width: '100vw'}} dpr={[1, 2]}
-                camera={{position: [0, 0, 30], fov: 90, far: 1000, near: 0.01}}>
+        <Canvas className="absolute inset-0" dpr={[1, 2]}
+                camera={{position: [0, 0, 20], fov: 90, far: 1000, near: 0.01}}>
           <fog attach="fog" args={['#202025', 0, 80]}/>
           <Sphere radius={10} texts={stack} countX={4} countY={6}/>
           <OrbitControls autoRotate enableRotate={false} autoRotateSpeed={10} enableZoom={false}/>

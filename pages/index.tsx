@@ -20,7 +20,7 @@ export default function Home() {
               <Banner/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1} speed={1}>
+            <ParallaxLayer offset={1} speed={2}>
               <SkillSphere/>
             </ParallaxLayer>
 
@@ -36,7 +36,7 @@ export default function Home() {
               <Links/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={5} speed={1} factor={1}>
+            <ParallaxLayer offset={5} speed={1}>
               <Footer/>
             </ParallaxLayer>
           </Parallax>
