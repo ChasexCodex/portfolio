@@ -1,8 +1,9 @@
 import Head from 'next/head'
 
-import {Banner, Contributions, Projects, Links, Title, Footer} from '../components'
+import {Banner, Contributions, Projects, Links, Title, Footer, SkillSphere} from '../components'
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {useRef} from 'react'
+
 
 export default function Home() {
   const ref = useRef(null)
@@ -20,18 +21,22 @@ export default function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer offset={1} speed={1}>
+              <SkillSphere/>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={2} speed={1}>
               <Projects/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={2} speed={0.5}>
+            <ParallaxLayer offset={3} speed={0.5}>
               <Contributions/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={3} speed={0.5}>
+            <ParallaxLayer offset={4} speed={0.5}>
               <Links/>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={4} speed={1} factor={1}>
+            <ParallaxLayer offset={5} speed={1} factor={1}>
               <Footer/>
             </ParallaxLayer>
           </Parallax>
