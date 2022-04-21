@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
-import type {AppProps} from 'next/app'
+// import type {AppProps} from 'next/app'
 import '../styles/globals.css'
 import ScreenSize from '../components/ScreenSize'
 
-export default function MyApp({Component, pageProps}: AppProps) {
+export default function MyApp({Component, pageProps}: any) {
   return (
     <div className="relative min-h-screen flex flex-col bg-gray-50 dark:bg-black">
       {/*<InteractiveBackground/>*/}
