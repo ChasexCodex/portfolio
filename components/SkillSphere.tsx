@@ -28,7 +28,7 @@ const thc = new THREE.Color(highlightColor)
 
 const randomColor = () => THREE.MathUtils.randInt(0, 0xffffff)
 
-const Skill = ({children, ...props}: PropsWithChildren<any>) => {
+const Skill = ({text, ...props}: PropsWithChildren<any>) => {
   const color = new THREE.Color(randomColor())
   const ref = useRef<any>()
   const offset = Math.random() * 100
@@ -54,7 +54,7 @@ const Skill = ({children, ...props}: PropsWithChildren<any>) => {
 
     ref.current.fontSize = 1.4 + (Math.sin(offset + Date.now() / 200) + 1) * speed
   })
-  return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} {...fontProps} children={children}/>
+  return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} {...fontProps} >{text}</Text>
 }
 
 type CloudProps = {
@@ -74,9 +74,9 @@ const Sphere = ({radius = 20, texts = [], countX, countY}: CloudProps) => {
       const r = spherical.set(radius, phiSpan * (i + 1), thetaSpan * j)
       return [new THREE.Vector3().setFromSpherical(r), texts[i * countY + j]] as [THREE.Vector3, string]
     })
-  }, [countX, countY, radius])
+  }, [countX, countY, radius, texts])
   return <>
-    {words.map(([pos, name], i) => <Skill key={i} position={pos} children={name}/>)}
+    {words.map(([pos, name], i) => <Skill key={i} position={pos} text={name}/>)}
   </>
 }
 
