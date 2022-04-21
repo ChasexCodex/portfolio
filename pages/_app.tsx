@@ -11,7 +11,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <main className="z-10 flex-1 container mx-auto flex flex-col justify-center mt-4 py-2 lg:py-4">
+      <main className="z-10 flex-1 container mx-auto flex flex-col justify-center">
         <Component {...pageProps} />
       </main>
       {process.env.useScreenSize === 'true' && <ScreenSize/>}

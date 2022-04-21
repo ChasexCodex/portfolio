@@ -12,7 +12,11 @@ const useD3Ref = <K extends keyof DOMElement>(
 
   useEffect(() => {
     if (ref.current) {
-      renderFn(select(ref.current))
+      const elem = select(ref.current) as Selection<DOMElement[K], undefined, null, undefined>
+
+      elem.selectChildren().remove()
+
+      renderFn(elem)
     }
   }, deps)
 
