@@ -1,6 +1,7 @@
 import {links} from '../data'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import * as faIcons from '@fortawesome/free-brands-svg-icons'
+import * as faIcons2 from '@fortawesome/free-solid-svg-icons'
 
 export default function Links() {
   return (
@@ -12,7 +13,7 @@ export default function Links() {
         <div className="mx-4 space-y-2 lg:space-y-0 flex flex-col lg:flex-row lg:space-x-2 lg:h-40 lg:justify-center">
           {links.map((l, i) => {
             // @ts-ignore
-            const icon = faIcons[l.icon]
+            const icon = faIcons[l.icon] ?? faIcons2[l.icon]
             return (
                 <a href={l.url} target="_blank" rel="noreferrer"
                    className="flex lg:flex-col lg:w-40 space-x-2 items-center rounded bg-white shadow-md p-2 dark:bg-gray-600 transform transition hover:scale-[102%] focus:scale-[102%]"

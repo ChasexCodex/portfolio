@@ -1,5 +1,11 @@
 [
   {
+    "name": "Blog",
+    "icon": "faCode",
+    "url": "https://blog.elyas-amri.ga",
+    "href": "blog"
+  },
+  {
     "name": "GitHub",
     "icon": "faGithub",
     "url": "https://github.com/elyasamri",
