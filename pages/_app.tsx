@@ -23,6 +23,13 @@ export default function MyApp({Component, pageProps}: AppProps) {
         <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL} key="og:url"/>
         <meta property="og:description" content="The best yet of Elyas A. Al-Amri" key="og:desc"/>
         <meta property="og:type" content="website" key="og:type"/>
+
+        <meta name="twitter:card" content="summary_large_image" key="twitter:card"/>
+        <meta property="twitter:domain" content="blog.elyas-amri.ga" key="twitter:domain"/>
+        <meta property="twitter:url" content={process.env.NEXT_PUBLIC_APP_URL} key="twitter:url"/>
+        <meta name="twitter:title" content="Elyas A. Al-Amri's Official Website" key="twitter:title"/>
+        <meta name="twitter:description" content="Elyas A. Al-Amri's Official Blog. Join me every week for new posts." key="twitter:description"/>
+        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_APP_URL}/website.jpg`} key="twitter:image"/>
       </Head>
       <main className="z-10 flex-1 container mx-auto flex flex-col justify-center mt-4 py-2 lg:py-4">
         <Component {...pageProps} />
